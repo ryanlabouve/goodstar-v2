@@ -1,45 +1,59 @@
 <script lang="ts">
-	import Counter from '$lib/Counter.svelte';
+	import Slideshow from '$lib/Slideshow.svelte';
+	import InlineSVG from 'svelte-inline-svg'
+
+  // https://ionicons.com/
+	let socialMedia = [
+		{
+			name: 'Twitter',
+			image: '/images/logo-twitter.svg',
+			link: 'https://twitter.com/goodstardemo'
+		},
+		{
+			name: 'Facebook',
+			image: '/images/logo-facebook.svg',
+			link: 'https://www.facebook.com/goodstardemolition'
+		},
+		{
+			name: 'Instagram',
+			image: '/images/logo-instagram.svg',
+			link: 'https://www.instagram.com/goodstardemolition'
+		},
+		{
+			name: 'LinkedIn',
+			image: '/images/logo-linkedin.svg',
+			link: 'https://www.linkedin.com/company/goodstardemolition'
+		},
+		{
+			name: 'Email',
+			image: '/images/mail-outline.svg',
+			link: 'mailto:ryan@goodstardemolition.com'
+		},
+	];
 </script>
 
 <main>
-	<h1>Hello world!</h1>
+	<Slideshow />
 
-	<Counter />
-
-	<p>Visit <a href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte apps.</p>
+	<div class="bg-gray-600 py-24">
+		<img src="/images/goodstar-logo.png" class="m-auto mb-3" alt="Goodstar"/>
+		<div class="mb-2 text-gray-300 text-center">
+			<span class="font-bold">
+				OKC
+			</span> | 
+			Demolition & Disaster Recovery
+		</div>
+		<div class="flex justify-center ">
+			{#each socialMedia as social}
+				<div>
+					<a href={social.link} class="stroke-current fill-current bg-gray-300 text-gray-300">
+						<InlineSVG class="w-8 h-8 mx-2" src={social.image} />
+					</a>
+				</div>
+			{/each}
+		</div>
+	</div>
 </main>
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4rem;
-		font-weight: 100;
-		line-height: 1.1;
-		margin: 4rem auto;
-		max-width: 14rem;
-	}
-
-	p {
-		max-width: 14rem;
-		margin: 2rem auto;
-		line-height: 1.35;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			max-width: none;
-		}
-
-		p {
-			max-width: none;
-		}
-	}
 </style>
