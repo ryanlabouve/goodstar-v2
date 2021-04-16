@@ -7,7 +7,7 @@
 		{
 			name: 'Twitter',
 			image: '/images/logo-twitter.svg',
-			link: 'https://twitter.com/goodstardemo'
+			link: 'https://twitter.com/goodstarventure'
 		},
 		{
 			name: 'Facebook',
@@ -17,7 +17,7 @@
 		{
 			name: 'Instagram',
 			image: '/images/logo-instagram.svg',
-			link: 'https://www.instagram.com/goodstardemolition'
+			link: 'https://www.instagram.com/goodstarventures'
 		},
 		{
 			name: 'LinkedIn',
@@ -27,7 +27,7 @@
 		{
 			name: 'Email',
 			image: '/images/mail-outline.svg',
-			link: 'mailto:ryan@goodstardemolition.com'
+			link: 'mailto:ryan@goodstarventures.com'
 		},
 	];
 </script>
@@ -36,7 +36,7 @@
 	<div class="bg-gray-600 py-24 min-h-screen">
 		<img src="/images/goodstar-logo.png" class="m-auto mb-3" alt="Goodstar"/>
 		<div class="mb-2 text-gray-300 text-center">
-			Starting local buisnesses to combat global disasters
+			Starting local buisnesses to fight global disasters
 		</div>
 		<div class="flex justify-center ">
 			{#each socialMedia as social}
