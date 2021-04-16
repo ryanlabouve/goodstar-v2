@@ -33,15 +33,10 @@
 </script>
 
 <main>
-	<Slideshow />
-
-	<div class="bg-gray-600 py-24">
+	<div class="bg-gray-600 py-24 min-h-screen">
 		<img src="/images/goodstar-logo.png" class="m-auto mb-3" alt="Goodstar"/>
 		<div class="mb-2 text-gray-300 text-center">
-			<span class="font-bold">
-				OKC
-			</span> | 
-			Demolition & Disaster Recovery
+			Starting local buisnesses to combat global disasters
 		</div>
 		<div class="flex justify-center ">
 			{#each socialMedia as social}
