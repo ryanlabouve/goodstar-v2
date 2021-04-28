@@ -88,7 +88,10 @@
         {/each}
       </div>
     </div>
-    <div class="py-44">
+    <div class="py-12">
+      <div>
+        <img class="m-auto max-w-lg opacity-80" src="/images/tiles/asdf.png" alt="Goodstar" />
+      </div>
       <div class="mb-2 text-gray-300 text-center text-4xl leading-relaxed">
         Starting local buisnesses to <br />fight global disasters
       </div>
